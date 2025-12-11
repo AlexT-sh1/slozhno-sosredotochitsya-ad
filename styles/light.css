@@ -1,6 +1,6 @@
-/* light.css - Светлая тема при наличии класса theme-light */
+/* light.css - Светлая тема при наличии класса theme-light на html */
 
-.page.theme-light {
+.theme-light .page {
     background-color: #FFF1F7;
     color: #353430;
     background-image: url('../images/cover-image-light.png');
@@ -57,20 +57,8 @@
     background-color: #FF8DCB;
     color: #353430;
 }
-/* light.css - Светлая тема */
 
-.page.theme-light .header__title {
+.theme-light .footer__title {
     color: #FFC2E6;
     text-shadow: 4px 4px 0 #FF8DCB;
-}
-
-.page.theme-light .footer__title {
-    color: #FFC2E6;
-    text-shadow: 4px 4px 0 #FF8DCB;
-}
-
-/* Также обновите .title-decor для светлой темы */
-.theme-light .title-decor {
-    background-color: #FF8DCB;
-    color: #353430;
 }

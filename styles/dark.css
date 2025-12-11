@@ -1,6 +1,6 @@
-/* dark.css - Тёмная тема при наличии класса theme-dark */
+/* dark.css - Тёмная тема при наличии класса theme-dark на html */
 
-.page.theme-dark {
+.theme-dark .page {
     background-color: #000028;
     color: #F1B2CE;
     background-image: url('../images/cover-image-dark.png');
@@ -54,16 +54,8 @@
     text-shadow: 2px 2px 0 #FF0070;
 }
 
-/* dark.css - Тёмная тема */
-
-.page.theme-dark .header__title {
-    color: #DB00FF;
-    text-shadow: 4px 4px 0 #FF0070;
-}
-
-.page.theme-dark .footer__title {
+/* Для футера */
+.theme-dark .footer__title {
     color: #DB00FF;
     text-shadow: 2px 2px 0 #FF0070;
 }
-
-/* Остальные стили остаются как есть */
