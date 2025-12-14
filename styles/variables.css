@@ -1,20 +1,20 @@
-/* variables.css - CSS переменные для всех тем */
+/* variables.css - CSS переменные для всех тем (исправленная версия) */
 
 :root {
-    /* Переменные по умолчанию (для авто-темы в светлом режиме системы) */
+    /* Авто-тема по умолчанию (светлый режим) */
     --bg-color: #FFF1F7;
     --text-color: #353430;
     --accent-color: #353430;
     --title-color: #FFC2E6;
     --title-shadow: #FF8DCB;
     --title-decor-bg: #FF8DCB;
-    --title-decor-text: #353430; /* Новая переменная для текста в title-decor */
+    --title-decor-text: #353430;
     --rec-color: transparent;
     --rec-dot-display: none;
     --cover-image: url('../images/cover-image-light.png');
 }
 
-/* Тёмная тема */
+/* Тёмная тема - явное указание */
 .theme-dark {
     --bg-color: #000028;
     --text-color: #F1B2CE;
@@ -22,13 +22,13 @@
     --title-color: #DB00FF;
     --title-shadow: #FF0070;
     --title-decor-bg: #FF0070;
-    --title-decor-text: #000028; /* В тёмной теме тёмно-синий текст */
+    --title-decor-text: #000028;
     --rec-color: #FF0070;
     --rec-dot-display: block;
     --cover-image: url('../images/cover-image-dark.png');
 }
 
-/* Светлая тема */
+/* Светлая тема - явное указание */
 .theme-light {
     --bg-color: #FFF1F7;
     --text-color: #353430;
@@ -42,7 +42,7 @@
     --cover-image: url('../images/cover-image-light.png');
 }
 
-/* Авто-тема на основе системных настроек (тёмный режим) */
+/* Авто-тема - только системные настройки, без дублирования */
 @media (prefers-color-scheme: dark) {
     .theme-auto {
         --bg-color: #000028;
@@ -58,7 +58,6 @@
     }
 }
 
-/* Авто-тема на основе системных настроек (светлый режим) */
 @media (prefers-color-scheme: light) {
     .theme-auto {
         --bg-color: #FFF1F7;
