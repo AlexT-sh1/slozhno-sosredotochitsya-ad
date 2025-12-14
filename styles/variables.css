@@ -1,74 +1,16 @@
-/* variables.css - CSS переменные для всех тем (исправленная версия) */
-
 :root {
-    /* Авто-тема по умолчанию (светлый режим) */
-    --bg-color: #FFF1F7;
-    --text-color: #353430;
-    --accent-color: #353430;
-    --title-color: #FFC2E6;
-    --title-shadow: #FF8DCB;
-    --title-decor-bg: #FF8DCB;
-    --title-decor-text: #353430;
-    --rec-color: transparent;
-    --rec-dot-display: none;
-    --cover-image: url('../images/cover-image-light.png');
-}
-
-/* Тёмная тема - явное указание */
-.theme-dark {
-    --bg-color: #000028;
-    --text-color: #F1B2CE;
-    --accent-color: #FF0070;
-    --title-color: #DB00FF;
-    --title-shadow: #FF0070;
-    --title-decor-bg: #FF0070;
-    --title-decor-text: #000028;
-    --rec-color: #FF0070;
-    --rec-dot-display: block;
-    --cover-image: url('../images/cover-image-dark.png');
-}
-
-/* Светлая тема - явное указание */
-.theme-light {
-    --bg-color: #FFF1F7;
-    --text-color: #353430;
-    --accent-color: #353430;
-    --title-color: #FFC2E6;
-    --title-shadow: #FF8DCB;
-    --title-decor-bg: #FF8DCB;
-    --title-decor-text: #353430;
-    --rec-color: transparent;
-    --rec-dot-display: none;
-    --cover-image: url('../images/cover-image-light.png');
-}
-
-/* Авто-тема - только системные настройки, без дублирования */
-@media (prefers-color-scheme: dark) {
-    .theme-auto {
-        --bg-color: #000028;
-        --text-color: #F1B2CE;
-        --accent-color: #FF0070;
-        --title-color: #DB00FF;
-        --title-shadow: #FF0070;
-        --title-decor-bg: #FF0070;
-        --title-decor-text: #000028;
-        --rec-color: #FF0070;
-        --rec-dot-display: block;
-        --cover-image: url('../images/cover-image-dark.png');
-    }
-}
-
-@media (prefers-color-scheme: light) {
-    .theme-auto {
-        --bg-color: #FFF1F7;
-        --text-color: #353430;
-        --accent-color: #353430;
-        --title-color: #FFC2E6;
-        --title-shadow: #FF8DCB;
-        --title-decor-bg: #FF8DCB;
-        --title-decor-text: #353430;
-        --rec-color: transparent;
-        --rec-dot-display: none;
-        --cover-image: url('../images/cover-image-light.png');
-    }
+  --text-color: rgba(241, 178, 206, 1);
+  --main-font: "IBM Plex mono", monospace;
+  --background: rgba(0, 0, 40, 1) url("../images/cover-image-dark.png")
+    no-repeat center / cover;
+  --accent-color: rgba(255, 0, 112, 1);
+  --accent-color-btn: rgba(255, 0, 112, 1);
+  --text-color-accent: rgba(219, 0, 255, 1);
+  --bg-color: rgba(0, 0, 40, 1);
+  --accent-color-title: rgba(255, 0, 112, 1);
+  --display-header-decor: inline-flex;
+  --color-section-title: rgba(255, 0, 112, 1);
+  --accent-color-opasity: rgba(255, 0, 112, 0.4);
+  --logo-size_mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --logo-size_desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 }
